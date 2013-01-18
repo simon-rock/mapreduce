@@ -7,6 +7,9 @@
 // atomic_count_win32.hpp   ¥Ê∑≈À˘”– win ∫Í
 
 #include "bt_thread.h"
+#include "bt_fs.h"
+#include "bt_numeric_accum.h"
+
 #include <iostream>
 
 // #if defined(BOOST_WINDOWS)
@@ -17,7 +20,10 @@
 #endif
 int main()
 {
+	fs_1("main.cpp");
 	test_thread();
+	test_thread_all();
+	test_numeric_accum();
 	std::cout << UUU << std::endl;
 	return 0;
 }

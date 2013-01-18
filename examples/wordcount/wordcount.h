@@ -33,8 +33,8 @@
 namespace wordcount {
 
 struct map_task : public mapreduce::map_task<
-                             std::string,                               // MapKey (filename)
-                             std::pair<char const *, char const *> >    // MapValue (memory mapped file contents)
+                             std::string,                               // MapKey (filename)						--key_type
+                             std::pair<char const *, char const *> >    // MapValue (memory mapped file contents)   --value_type
 {
     template<typename Runtime>
     void operator()(Runtime &runtime, key_type const &/*key*/, value_type &value) const

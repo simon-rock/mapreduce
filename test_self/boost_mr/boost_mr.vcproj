@@ -42,7 +42,7 @@
 				Name="VCCLCompilerTool"
 				Optimization="0"
 				AdditionalIncludeDirectories="E:\resource\boost_1_49_0\"
-				PreprocessorDefinitions="WIN32;_DEBUG;_CONSOLE;WIN32_LEAN_AND_MEAN"
+				PreprocessorDefinitions="WIN32;_DEBUG;_CONSOLE;WIN32_LEAN_AND_MEAN;_SCL_SECURE_NO_WARNINGS;_SECURE_SCL=0"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
 				RuntimeLibrary="3"
@@ -184,6 +184,10 @@
 			>
 			<File
 				RelativePath=".\bt_fs.h"
+				>
+			</File>
+			<File
+				RelativePath=".\bt_numeric_accum.h"
 				>
 			</File>
 			<File
